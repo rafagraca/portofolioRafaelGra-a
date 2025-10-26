@@ -33,3 +33,31 @@
 .contact--lockup .modal {
   border-radius: 6px;
 }
+/* === Works: pequenos toques de UI === */
+
+/* aro azul no item ativo ao passar o rato */
+.work--lockup .slider--item-image img {
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+.work--lockup .slider--item a:hover .slider--item-image img {
+  transform: scale(1.03);
+  box-shadow: 0 0 0 6px rgba(15,51,255,.3);
+}
+
+/* mantém o texto limpo e legível */
+.work--lockup .slider--item-title {
+  letter-spacing: .5px;
+}
+.work--lockup .slider--item-description {
+  max-width: 420px;
+}
+
+/* para garantir círculo perfeito mesmo com imagens maiores */
+.work--lockup .slider--item-image {
+  overflow: hidden;
+}
+.work--lockup .slider--item-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
