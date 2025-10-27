@@ -2307,6 +2307,29 @@ body {
 		align-items: flex-start;
 		text-align: left;
 	}
+/* === OVERRIDE HERO IMAGE (colocar no fim do main.css) === */
+.intro .intro--banner > img {
+  position: absolute !important;
+  right: -12px !important;
+  bottom: 90px !important;  /* sobe a imagem: aumenta/diminui este valor */
+  width: 360px !important;  /* tamanho menor */
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+  z-index: 0 !important;
+  opacity: 0.96 !important;
+}
+@media (max-width: 900px) {
+  .intro .intro--banner > img {
+    bottom: 70px !important;
+    width: 300px !important;
+  }
+}
+@media (max-width: 600px) {
+  .intro .intro--banner > img {
+    display: none !important;
+  }
+}
 
 
 }
