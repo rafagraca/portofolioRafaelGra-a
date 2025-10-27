@@ -87,3 +87,30 @@
   font-weight: 700;
   text-transform: none;
 }
+/* ==== AJUSTE DEFINITIVO DO TAMANHO DO LOGOTIPO ==== */
+
+/* reduz o tamanho do símbolo no header */
+.header--logo img {
+  width: 28px !important;      /* diminui para 28px (ajusta se quiseres) */
+  height: 28px !important;
+  object-fit: contain !important;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+}
+
+/* reduz também dentro do aviso para mobile */
+.device-notification--logo img {
+  width: 28px !important;
+  height: 28px !important;
+  object-fit: contain !important;
+}
+
+/* ajusta o texto ao lado do logo */
+.header--logo p {
+  font-size: 14px !important;
+  font-weight: 700;
+  text-transform: none;
+  margin-left: 6px !important;
+  line-height: 1 !important;
+}
+
