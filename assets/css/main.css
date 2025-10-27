@@ -870,20 +870,35 @@ body {
 	}
 .intro--banner img {
   position: absolute;
-  bottom: 20px;              /* mantém alinhado à linha cinzenta */
-  right: 40px;               /* afasta um pouco da borda */
-  width: 420px;              /* tamanho ideal — ajusta aqui se quiseres */
+  bottom: 21px;     /* mantém o alinhamento com a linha cinzenta */
+  right: -12px;     /* mantém o mesmo recuo lateral */
+  width: 360px;     /* 🔽 tamanho reduzido (antes era 430px) */
   height: auto;
   object-fit: contain;
-  z-index: 0;                /* fica atrás do texto */
-  opacity: 0.95;             /* ligeira transparência para integrar melhor */
+  z-index: 0;
+  opacity: 0.96;
   transition: transform .3s ease, opacity .3s ease;
 }
 
+/* efeito hover suave (opcional) */
 .intro--banner img:hover {
-  transform: scale(1.02);
+  transform: scale(1.03);
   opacity: 1;
 }
+
+/* ajustes responsivos */
+@media (max-width: 900px) {
+  .intro--banner img {
+    width: 300px;   /* ainda menor em ecrãs médios */
+  }
+}
+
+@media (max-width: 600px) {
+  .intro--banner img {
+    display: none;  /* esconde no telemóvel */
+  }
+}
+
 
 
 	
