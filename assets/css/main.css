@@ -174,12 +174,15 @@
 
 
 
-/* Link 'Sobre mim' no banner */
-.about--banner a[data-open="about"] { cursor: pointer; }
-/* ===== SOBRE MIM: layout limpo e moderno ===== */
+/* ===== ABOUT: largura ligeiramente maior para caberem 3 cards confortáveis ===== */
+.about{
+  width: 1100px;           /* antes: 900px */
+  max-width: 90%;
+  margin: 0 auto;
+}
 
-/* Título e imagem */
-.about--banner {
+/* ===== ABOUT BANNER (mantém) ===== */
+.about--banner{
   position: relative;
   display: flex;
   align-items: center;
@@ -188,16 +191,13 @@
   padding: 60px 0;
   gap: 40px;
 }
-
-.about--banner h2 {
+.about--banner h2{
   font-size: 64px;
   font-weight: 900;
   line-height: 1.05;
-  color: #fff;
   margin: 0;
 }
-
-.about--banner a {
+.about--banner a{
   display: inline-flex;
   align-items: center;
   gap: 6px;
@@ -210,107 +210,94 @@
   text-transform: uppercase;
   text-decoration: none;
   border-radius: 4px;
-  transition: background 0.3s ease, transform 0.2s ease;
+  transition: background .3s ease, transform .2s ease;
+}
+.about--banner a:hover{ background:#1f6feb; transform: translateY(-2px); }
+.about--banner img{
+  width: 360px; height: auto; object-fit: contain;
+  filter: drop-shadow(0 0 15px rgba(0,0,0,.4));
 }
 
-.about--banner a:hover {
-  background-color: #1f6feb;
-  transform: translateY(-2px);
-}
-
-.about--banner img {
-  width: 360px;
-  height: auto;
-  object-fit: contain;
-  filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.4));
-}
-/* ---- Responsivo ---- */
-@media (max-width: 900px) {
-  .about--banner {
-    flex-direction: column;
-    align-items: flex-start;
-    text-align: left;
-  }
-
-  .about--banner img {
-    width: 260px;
-    align-self: center;
-  }
-/* ---- SOBRE MIM (layout horizontal fixado) ---- */
-.about--options {
+/* ====== ABOUT CARDS – NOVO LAYOUT HORIZONTAL ====== */
+/* IMPORTANTE: isto está FORA de qualquer @media, para valer no desktop também */
+.about--options{
   display: flex;
   justify-content: center;
   align-items: stretch;
-  flex-wrap: nowrap;          /* mantém tudo na mesma linha */
-  gap: 40px;                  /* espaço entre os quadrados */
-  margin-top: 50px;
-  padding: 0 40px 60px;
+  flex-wrap: nowrap;         /* mantém numa linha no desktop */
+  gap: 36px;
+  margin-top: 42px;
+  padding: 0 10px 60px;
   max-width: 1200px;
   margin-left: auto;
   margin-right: auto;
 }
 
-/* cada card */
-.about--options a {
-  flex: 1 1 30%;              /* 3 colunas iguais */
-  min-width: 260px;
-  max-width: 320px;
-  height: auto;
-  background-color: #141414;
+/* zera estilos antigos dos links/cards */
+.about--options > a{
+  /* anula o legado */
+  background-image: none !important;
+  border: 2px solid #0f33ff !important;
+  width: auto !important;
+  height: auto !important;
+  position: relative !important;
+  box-sizing: border-box;      /* padding conta na largura */
+  overflow: hidden;
+
+  /* visual do card */
+  flex: 1 1 0;
+  min-width: 280px;
+  max-width: 340px;
+  background: #141414;
   color: #fff;
   text-decoration: none;
-  border: 2px solid #0f33ff;
   border-radius: 12px;
-  overflow: hidden;
-  padding: 25px 20px;
-  transition: all 0.3s ease;
-  box-shadow: 0 0 20px rgba(0,0,0,0.35);
+  padding: 22px 20px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
+  box-shadow: 0 0 18px rgba(0,0,0,.35);
 }
 
-/* efeito ao passar o rato */
-.about--options a:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 25px rgba(15, 51, 255, 0.25);
+.about--options > a:hover{
+  transform: translateY(-6px);
+  box-shadow: 0 10px 24px rgba(15,51,255,.25);
   border-color: #1f6feb;
 }
 
-/* título do card */
-.about--options a h3 {
-  font-size: 20px;
-  margin-bottom: 12px;
+/* título e texto dentro do card */
+.about--options > a h3{
+  position: static !important;  /* anula “bottom:-38px” antigo */
+  margin: 0 0 10px 0;
+  font-size: 19px;
   text-transform: uppercase;
   color: #1f6feb;
   text-align: center;
 }
-
-/* texto do card */
-.about--options a p {
+.about--options > a p{
+  margin: 0;
   font-size: 15px;
   line-height: 1.6;
   color: #ccc;
   text-align: center;
+  overflow-wrap: anywhere;      /* impede palavras longas de sair do card */
 }
 
-/* responsivo — no telemóvel passam a 1 por linha */
-@media (max-width: 950px) {
-  .about--options {
-    flex-wrap: wrap;          /* permite quebrar linha */
-    gap: 25px;
-  }
-
-  .about--options a {
-    flex: 1 1 45%;            /* 2 colunas em tablets */
-  }
+/* RESPONSIVO: 2 colunas no tablet */
+@media (max-width: 950px){
+  .about--options{ flex-wrap: wrap; }
+  .about--options > a{ flex: 1 1 45%; max-width: 480px; }
+}
+/* RESPONSIVO: 1 coluna no telemóvel */
+@media (max-width: 600px){
+  .about--options > a{ flex: 1 1 100%; max-width: 92%; }
 }
 
-@media (max-width: 600px) {
-  .about--options a {
-    flex: 1 1 100%;           /* 1 coluna em telemóveis */
-    max-width: 90%;
-  }
+/* mantém responsividade do banner */
+@media (max-width: 900px){
+  .about--banner{ flex-direction: column; align-items: flex-start; text-align: left; }
+  .about--banner img{ width: 260px; align-self: center; }
 }
 
 
