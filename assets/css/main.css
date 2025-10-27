@@ -870,12 +870,13 @@ body {
 	}
 .intro--banner img {
   position: absolute;
-  bottom: 0;
-  right: -30px;            /* afasta ligeiramente da direita */
-  width: 480px;            /* ajusta o tamanho da imagem */
+  bottom: 20px;              /* mantém alinhado à linha cinzenta */
+  right: 40px;               /* afasta um pouco da borda */
+  width: 420px;              /* tamanho ideal — ajusta aqui se quiseres */
   height: auto;
-  opacity: 0.95;           /* ligeira transparência se quiseres */
   object-fit: contain;
+  z-index: 0;                /* fica atrás do texto */
+  opacity: 0.95;             /* ligeira transparência para integrar melhor */
   transition: transform .3s ease, opacity .3s ease;
 }
 
@@ -883,6 +884,7 @@ body {
   transform: scale(1.02);
   opacity: 1;
 }
+
 
 	
 }
