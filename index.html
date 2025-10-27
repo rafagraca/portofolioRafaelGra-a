@@ -202,8 +202,9 @@
        <li class="l-section section">
   <div class="about">
     <div class="about--banner">
-      <h2>Rafael<br>Graça<br>Engenharia<br>Informática</h2>
-      <a href="#0">Sobre mim
+  <h2>Rafael<br>Graça<br>Engenharia<br>Informática</h2>
+  <!-- abre modal na tab 'bio' -->
+  <a href="#0" data-open="about" data-tab="bio">Sobre mim
         <span>
           <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 118">
             <g transform="translate(0,118) scale(0.1,-0.1)">
@@ -220,13 +221,13 @@
           </svg>
         </span>
       </a>
-      <img src="assets/img/about-visual.png" alt="Sobre mim">
-    </div>
+  <img src="assets/img/about-visual.png" alt="Sobre mim">
+</div>
 
-    <div class="about--options">
-      <!-- 1. Bio -->
-      <a href="#0" style="background-image:url('assets/img/about-bio.jpg')">
-        <h3>Quem sou</h3>
+   <div class="about--options">
+  <!-- 1. Bio -->
+  <a href="#0" data-open="about" data-tab="bio" style="background-image:url('assets/img/about-bio.jpg')">
+    <h3>Quem sou</h3>
         <p>
           Estudante de Engenharia Informática no <strong>Instituto Politécnico de Beja</strong> desde 2022,
           após concluir o ensino secundário na <strong>Escola Secundária de Vila Real de Santo António</strong>.
@@ -234,9 +235,9 @@
         </p>
       </a>
 
-      <!-- 2. Competências Técnicas -->
-      <a href="#0" style="background-image:url('assets/img/about-skills.jpg')">
-        <h3>Hard Skills</h3>
+     <!-- 2. Hard Skills -->
+  <a href="#0" data-open="about" data-tab="hard" style="background-image:url('assets/img/about-skills.jpg')">
+    <h3>Hard Skills</h3>
         <p>
           Programação em <strong>Java</strong>, <strong>MATLAB</strong> e <strong>SQL</strong>.<br>
           Criação de websites em <strong>HTML</strong>, <strong>CSS</strong> e <strong>JavaScript</strong>.<br>
@@ -244,9 +245,9 @@
         </p>
       </a>
 
-      <!-- 3. Soft Skills -->
-      <a href="#0" style="background-image:url('assets/img/about-soft.jpg')">
-        <h3>Soft Skills</h3>
+ <!-- 3. Soft Skills -->
+  <a href="#0" data-open="about" data-tab="soft" style="background-image:url('assets/img/about-soft.jpg')">
+    <h3>Soft Skills</h3>
         <p>
           Comunicação clara, trabalho em equipa, foco na resolução de problemas
           e capacidade de adaptação a novas tecnologias e desafios.
@@ -309,6 +310,72 @@
     <li>Contact</li>
     <!-- Removido: <li>Hire us</li> -->
   </ul>
+</div>
+<!-- ===== ABOUT MODAL (colocar antes dos <script>) ===== -->
+<div id="about-modal" class="about-modal" aria-hidden="true">
+  <div class="about-modal__backdrop" data-close></div>
+
+  <div class="about-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="aboutModalTitle">
+    <button class="about-modal__close" title="Fechar" data-close>&times;</button>
+
+    <h3 id="aboutModalTitle" class="about-modal__title">Sobre mim</h3>
+
+    <div class="about-modal__tabs">
+      <button class="tab is-active" data-tab="bio">Quem sou</button>
+      <button class="tab" data-tab="hard">Hard skills</button>
+      <button class="tab" data-tab="soft">Soft skills</button>
+      <button class="tab" data-tab="edu">Educação</button>
+    </div>
+
+    <div class="about-modal__panes">
+      <section class="pane is-active" data-pane="bio">
+        <h4>Quem sou</h4>
+        <p>
+          Sou o <strong>Rafael Graça</strong>, estudante de <strong>Engenharia Informática</strong> no
+          <strong>Instituto Politécnico de Beja</strong> desde 2022. Terminei o secundário na
+          <strong>Escola Secundária de Vila Real de Santo António</strong>.
+          Curioso por natureza, gosto de transformar ideias em soluções práticas e de aprender tecnologias novas.
+        </p>
+        <p>Interesses: algoritmos, desenvolvimento web, bases de dados, automação e visualização.</p>
+      </section>
+
+      <section class="pane" data-pane="hard">
+        <h4>Hard skills</h4>
+        <ul class="bulleted">
+          <li><strong>Linguagens:</strong> Java (POO), MATLAB, SQL, HTML, CSS, JavaScript.</li>
+          <li><strong>Algoritmos:</strong> Dijkstra, BFS/DFS, modelação numérica (EDOs/ODEs).</li>
+          <li><strong>Bases de dados:</strong> SQL Server, Access (modelação/normalização, queries, vistas).</li>
+          <li><strong>Ferramentas:</strong> Git/GitHub, VS Code, MATLAB, SQL Server/Management Studio.</li>
+          <li><strong>Web:</strong> landing pages responsivas e UI limpa.</li>
+        </ul>
+        <p class="note">Projetos em detalhe na secção “Projects”.</p>
+      </section>
+
+      <section class="pane" data-pane="soft">
+        <h4>Soft skills</h4>
+        <ul class="bulleted">
+          <li>Comunicação clara e objetiva.</li>
+          <li>Trabalho em equipa e partilha de conhecimento.</li>
+          <li>Resolução de problemas com foco em eficiência e simplicidade.</li>
+          <li>Autonomia, organização e adaptabilidade.</li>
+        </ul>
+      </section>
+
+      <section class="pane" data-pane="edu">
+        <h4>Educação</h4>
+        <ul class="timeline">
+          <li>
+            <span class="when">2022 — atual</span>
+            <span class="what"><strong>Licenciatura em Engenharia Informática</strong> — IPBeja</span>
+          </li>
+          <li>
+            <span class="when">até 2022</span>
+            <span class="what"><strong>Ensino Secundário</strong> — Escola Secundária de Vila Real de Santo António</span>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </div>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
