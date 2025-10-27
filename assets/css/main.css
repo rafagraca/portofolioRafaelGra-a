@@ -779,11 +779,7 @@ body {
 	fill: #fff
 }
 
-.intro--banner img {
-	position: absolute;
-	bottom: 21px;
-	right: -12px
-}
+
 
 .intro--options {
 	display: -webkit-box;
@@ -829,10 +825,7 @@ body {
 		font-size: 55px
 	}
 
-	.intro--banner img {
-		width: 430px
-	}
-
+	
 	.intro--options>a {
 		margin-right: 30px
 	}
@@ -851,10 +844,7 @@ body {
 		font-size: 44px
 	}
 
-	.intro--banner img {
-		width: 330px
-	}
-
+	
 	.intro--options {
 		display: block
 	}
@@ -878,10 +868,23 @@ body {
 	.intro--banner h1 {
 		font-size: 55px
 	}
+.intro--banner img {
+  position: absolute;
+  bottom: 0;
+  right: -30px;            /* afasta ligeiramente da direita */
+  width: 480px;            /* ajusta o tamanho da imagem */
+  height: auto;
+  opacity: 0.95;           /* ligeira transparência se quiseres */
+  object-fit: contain;
+  transition: transform .3s ease, opacity .3s ease;
+}
 
-	.intro--banner img {
-		display: none
-	}
+.intro--banner img:hover {
+  transform: scale(1.02);
+  opacity: 1;
+}
+
+	
 }
 
 @media (max-width: 600px) and (max-height: 750px) {
