@@ -870,9 +870,9 @@ body {
 	}
 .intro--banner img {
   position: absolute;
-  bottom: 21px;     /* mantém o alinhamento com a linha cinzenta */
-  right: -12px;     /* mantém o mesmo recuo lateral */
-  width: 360px;     /* 🔽 tamanho reduzido (antes era 430px) */
+  bottom: 80px;     /* 🔼 antes era 21px — sobe a imagem */
+  right: -12px;     /* mantém alinhamento à direita */
+  width: 360px;     /* tamanho equilibrado */
   height: auto;
   object-fit: contain;
   z-index: 0;
@@ -880,7 +880,7 @@ body {
   transition: transform .3s ease, opacity .3s ease;
 }
 
-/* efeito hover suave (opcional) */
+/* efeito hover (opcional) */
 .intro--banner img:hover {
   transform: scale(1.03);
   opacity: 1;
@@ -889,15 +889,17 @@ body {
 /* ajustes responsivos */
 @media (max-width: 900px) {
   .intro--banner img {
-    width: 300px;   /* ainda menor em ecrãs médios */
+    bottom: 60px;
+    width: 300px;
   }
 }
 
 @media (max-width: 600px) {
   .intro--banner img {
-    display: none;  /* esconde no telemóvel */
+    display: none;
   }
 }
+
 
 
 
