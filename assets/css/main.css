@@ -868,39 +868,21 @@ body {
 	.intro--banner h1 {
 		font-size: 55px
 	}
+
 .intro--banner img {
-  position: absolute;
-  bottom: 80px;     /* 🔼 antes era 21px — sobe a imagem */
-  right: -12px;     /* mantém alinhamento à direita */
-  width: 360px;     /* tamanho equilibrado */
-  height: auto;
-  object-fit: contain;
-  z-index: 0;
-  opacity: 0.96;
-  transition: transform .3s ease, opacity .3s ease;
+	position: absolute;
+	bottom: 21px;
+	right: -12px
 }
-
-/* efeito hover (opcional) */
-.intro--banner img:hover {
-  transform: scale(1.03);
-  opacity: 1;
-}
-
-/* ajustes responsivos */
-@media (max-width: 900px) {
-  .intro--banner img {
-    bottom: 60px;
-    width: 300px;
-  }
-}
-
-@media (max-width: 600px) {
-  .intro--banner img {
-    display: none;
-  }
-}
-
-
+.intro--banner img {
+		width: 430px
+	}
+.intro--banner img {
+		width: 330px
+	}
+.intro--banner img {
+		display: none
+	}
 
 
 	
