@@ -61,12 +61,7 @@
   height: 100%;
   object-fit: cover;
 }
-/* ====== Header logo: tamanho mais pequeno e alinhado ====== */
-.header--logo img { 
-  width: 42px;         /* ajusta aqui (ex.: 36–48px) */
-  height: 42px; 
-  object-fit: contain; 
-}
+
 .header--logo p {
   margin: 0 0 0 8px;
   font-size: 14px;     /* podes subir para 15–16 se quiseres */
@@ -87,30 +82,32 @@
   font-weight: 700;
   text-transform: none;
 }
-/* ==== AJUSTE DEFINITIVO DO TAMANHO DO LOGOTIPO ==== */
-
-/* reduz o tamanho do símbolo no header */
-.header--logo img {
-  width: 28px !important;      /* diminui para 28px (ajusta se quiseres) */
-  height: 28px !important;
-  object-fit: contain !important;
-  margin-top: 0 !important;
-  margin-bottom: 0 !important;
+/* ===== Logo no header: tamanho final ===== */
+.header--logo {
+  align-items: center;
 }
 
-/* reduz também dentro do aviso para mobile */
-.device-notification--logo img {
-  width: 28px !important;
-  height: 28px !important;
+.header--logo img{
+  height: 22px !important;   /* ajusta aqui (20–28px) */
+  width: auto !important;    /* mantém proporção */
+  display: block !important;
   object-fit: contain !important;
+  margin: 0 !important;
 }
 
-/* ajusta o texto ao lado do logo */
-.header--logo p {
+.header--logo p{
+  margin-left: 6px !important;
   font-size: 14px !important;
   font-weight: 700;
   text-transform: none;
-  margin-left: 6px !important;
   line-height: 1 !important;
 }
+
+/* também no aviso de dispositivo */
+.device-notification--logo img{
+  height: 22px !important;
+  width: auto !important;
+  object-fit: contain !important;
+}
+
 
