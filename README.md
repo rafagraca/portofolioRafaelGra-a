@@ -1,51 +1,62 @@
 # 🌐 Rafael Graça — Personal Portfolio
 
 Welcome to my personal portfolio!  
-This project showcases my academic background, technical skills, and some of the work I’ve developed while studying **Computer Engineering** at the Polytechnic Institute of Beja.
+This project highlights my academic background, technical experience, and the main projects I have developed while studying **Computer Engineering** at the Polytechnic Institute of Beja.
 
-The website is a clean and responsive one-page layout built with **HTML, CSS, and JavaScript**, designed to be simple, fast, and easy to navigate.
+It is a fast, clean, and responsive one-page website built with **HTML, CSS, and JavaScript**.
+
+---
+
+## 🌐 Live Portfolio
+
+You can view my portfolio online here:
+
+👉 **https://rafagraca.github.io/portofolioRafaelGra-a/**
+
+A responsive and lightweight website that presents my skills, background, and featured projects.  
+I update it continuously as I progress through my degree.
 
 ---
 
 ## 👨‍💻 About Me
 
-Hi! I'm **Rafael Graça**, a Computer Engineering student since 2022.  
-I enjoy building software, learning new technologies, and solving practical problems through programming.
+Hi! I'm **Rafael Graça**, a Computer Engineering student at the Polytechnic Institute of Beja since 2022.  
+I enjoy creating software, exploring new technologies, and solving real problems through programming.
 
-Throughout my degree, I’ve gained experience in:
+During my degree, I have gained experience in:
 
 - Java, MATLAB, JavaScript  
-- Web development (HTML, CSS, JS)  
-- Database design (SQL Server & Access)  
 - Numerical algorithms and simulations  
+- Web development (HTML, CSS, JS)  
+- Relational databases (SQL Server, Access)  
 - Git & GitHub version control  
 
-I also have **multiple summer job experiences**, where I developed strong **communication**, **teamwork**, **responsibility**, and **leadership** skills by assisting customers and coordinating small groups.
+I also have multiple **summer job experiences**, where I developed strong **communication**, **teamwork**, **responsibility**, and **leadership** skills by interacting with customers and coordinating colleagues.
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🔹 **Atmospheric Re-Entry Simulation (MATLAB)**
-A numerical simulation model analyzing the re-entry trajectory of a satellite.  
+### 🔹 Atmospheric Re-Entry Simulation (MATLAB)
+Numerical model simulating a satellite’s atmospheric re-entry using physical equations and ODE solving.  
 Includes:
-- Differential equation solving  
-- Physical modeling  
-- Graphical analysis of results  
+- Differential equation modeling  
+- Numerical integration  
+- Graphical analysis  
 
 ---
 
-### 🔹 **Database Systems — SQL Server / Access**
-Academic project focused on:
-- Relational database design  
+### 🔹 Database Systems — SQL Server / Access
+Designed and implemented relational databases:
 - Normalization  
+- Table creation and relationships  
 - SQL queries  
-- Forms and reports connected through ODBC  
+- Forms and reports via ODBC  
 
 ---
 
-### 🔹 **Object-Oriented Programming — Java**
-Development of small applications and exercises involving:
+### 🔹 Object-Oriented Programming — Java
+Small applications and exercises applying:
 - Classes and objects  
 - Inheritance  
 - Collections  
@@ -78,17 +89,17 @@ Final Grade: **14/20**
 
 ## 📫 Contact
 
-📨 **Email:** rafaelribgraca@gmail.com  
-🔗 **LinkedIn:** https://linkedin.com/in/rafael-graca-a85521386  
-💻 **GitHub:** https://github.com/rafagraca  
+📨 Email: **rafaelribgraca@gmail.com**  
+🔗 LinkedIn: **https://linkedin.com/in/rafael-graca-a85521386**  
+💻 GitHub: **https://github.com/rafagraca**
 
 ---
 
 ## ⚙️ Development
 
-To clone or customize this portfolio locally:
+To clone or customize this project locally:
 
 ```bash
-git clone https://github.com/rafagraca/portfolio.git
-cd portfolio
+git clone https://github.com/rafagraca/portofolioRafaelGra-a.git
+cd portofolioRafaelGra-a
 # open index.html or start editing
