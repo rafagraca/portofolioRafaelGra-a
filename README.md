@@ -1,4 +1,4 @@
-# 🌐 Rafael Graça — Personal Portfolio
+# 🚀 Rafael Graça — Personal Portfolio
 
 Welcome to my personal portfolio!  
 This project highlights my academic background, technical experience, and the main projects I have developed while studying **Computer Engineering** at the Polytechnic Institute of Beja.
@@ -7,7 +7,7 @@ It is a fast, clean, and responsive one-page website built with **HTML, CSS, and
 
 ---
 
-## 🌐 Live Portfolio
+## 🌍 Live Portfolio
 
 You can view my portfolio online here:
 
@@ -35,7 +35,7 @@ I also have multiple **summer job experiences**, where I developed strong **comm
 
 ---
 
-## 🚀 Featured Projects
+## 💻 Featured Projects
 
 ### 🔹 Atmospheric Re-Entry Simulation (MATLAB)
 Numerical model simulating a satellite’s atmospheric re-entry using physical equations and ODE solving.  
