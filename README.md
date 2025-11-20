@@ -11,7 +11,7 @@ It is a fast, clean, and responsive one-page website built with **HTML, CSS, and
 
 You can view my portfolio online here:
 
-👉 **https://rafagraca.github.io/portofolioRafaelGra-a/**
+👉 **https://rafagraca.github.io/Portofolio/**
 
 A responsive and lightweight website that presents my skills, background, and featured projects.  
 I update it continuously as I progress through my degree.
