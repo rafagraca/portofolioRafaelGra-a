@@ -1,260 +1,344 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>Rafael Graça</title>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="description" content="Portfolio of Rafael Graça - Computer Engineering Student" />
-    <meta name="keywords" content="portfolio, web, programming, Java, MATLAB, SQL, student" />
-    <meta name="author" content="Rafael Graça" />
-    <link rel="stylesheet" href="assets/css/main.css" />
-  </head>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rafael Graça | Computer Engineering Portfolio</title>
+    <meta name="description" content="Portfolio of Rafael Graça - Computer Engineering Student at IPBeja. Java, MATLAB, SQL developer.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            light: '#a34a59', // Burgundy lighter
+                            DEFAULT: '#800020', // Burgundy (matching CV)
+                            dark: '#4a0012',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        .glass-card {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        .hero-pattern {
+            background-color: #f8fafc;
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23800020' fill-opacity='0.05'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 font-sans antialiased">
 
-  <body>
-    <!-- notification for small viewports and landscape oriented smartphones -->
-    <div class="device-notification">
-      <a class="device-notification--logo" href="#0">
-        <img src="assets/img/logo.png" alt="Rafael Graça" />
-        <p>Rafael Graça</p>
-      </a>
-      <p class="device-notification--message">Please rotate your device for a better viewing experience.</p>
-    </div>
-
-    <div class="perspective effect-rotate-left">
-      <div class="container">
-        <div class="outer-nav--return"></div>
-        <div id="viewport" class="l-viewport">
-          <div class="l-wrapper">
-            <header class="header">
-              <a class="header--logo" href="#0">
-                <img src="assets/img/logo.png" alt="Rafael Graça" />
-                <p>Rafael Graça</p>
-              </a>
-
-              <!-- HEADER BUTTON: opens CV -->
-              <button class="header--cta cta" onclick="window.open('assets/cv/cvotimizado.pdf','_blank')">
-                View CV
-                <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 118">
-                  <g transform="translate(0,118) scale(0.1,-0.1)">
-                    <path
-                      d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1
-                      c-431,0-571-3-590-13c-55-28-64-94-18-137
-                      c21-20,33-20,597-20h575l-192-193
-                      C800,103,794,94,849,39c20-20,39-29,61-29
-                      c28,0,63,30,298,262
-                      c147,144,272,271,279,282
-                      c30,51,23,60-219,304
-                      C947,1180,926,1196,870,1167z"
-                    />
-                  </g>
-                </svg>
-                <span class="btn-background"></span>
-              </button>
-              <div class="header--nav-toggle"><span></span></div>
-            </header>
-
-            <nav class="l-side-nav">
-              <ul class="side-nav">
-                <li class="is-active"><span>Home</span></li>
-                <li><span>Projects</span></li>
-                <li><span>About</span></li>
-                <li><span>Contact</span></li>
-              </ul>
-            </nav>
-
-            <ul class="l-main-content main-content">
-              <!-- HOME -->
-              <li class="l-section section section--is-active">
-                <div class="intro">
-                  <div class="intro--banner">
-                    <h1>
-                      Rafael Graça<br />
-                      Student<br />
-                      Computer Engineering
-                    </h1>
-
-                    <button class="cta" onclick="window.open('assets/cv/cvotimizado.pdf','_blank')">
-                      View CV
-                      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 118">
-                        <g transform="translate(0,118) scale(0.1,-0.1)">
-                          <path
-                            d="M870,1167c-34-17-55-57-46-90c3-15,81-100,194-211l187-185l-565-1
-                            c-431,0-571-3-590-13c-55-28-64-94-18-137
-                            c21-20,33-20,597-20h575l-192-193
-                            C800,103,794,94,849,39c20-20,39-29,61-29
-                            c28,0,63,30,298,262
-                            c147,144,272,271,279,282
-                            c30,51,23,60-219,304
-                            C947,1180,926,1196,870,1167z"
-                          />
-                        </g>
-                      </svg>
-                      <span class="btn-background"></span>
+    <!-- NAVIGATION -->
+    <nav class="fixed w-full z-50 bg-white/90 backdrop-blur-md border-b border-slate-200 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <span class="font-bold text-2xl text-brand tracking-tighter">RG.</span>
+                </div>
+                <div class="hidden md:flex space-x-8 items-center">
+                    <a href="#home" class="text-slate-600 hover:text-brand font-medium transition-colors">Home</a>
+                    <a href="#about" class="text-slate-600 hover:text-brand font-medium transition-colors">About</a>
+                    <a href="#projects" class="text-slate-600 hover:text-brand font-medium transition-colors">Projects</a>
+                    <a href="#interests" class="text-slate-600 hover:text-brand font-medium transition-colors">Interests</a>
+                    <a href="rafael_graca_cv.pdf" target="_blank" class="px-5 py-2 rounded-full bg-brand text-white font-medium hover:bg-brand-dark transition-all transform hover:scale-105 shadow-md flex items-center gap-2">
+                        <i class="fas fa-file-download"></i> Download CV
+                    </a>
+                </div>
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button onclick="document.getElementById('mobile-menu').classList.toggle('hidden')" class="text-slate-600 hover:text-brand focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
                     </button>
-                  </div>
-
-                  <div class="intro--options">
-                    <a href="#0">
-                      <h3>Development</h3>
-                      <p>Building applications and web solutions focused on logic, efficiency, and clean design.</p>
-                    </a>
-                    <a href="#0">
-                      <h3>Continuous Learning</h3>
-                      <p>Exploring new programming languages and technologies, from MATLAB to Java and modern web frameworks.</p>
-                    </a>
-                    <a href="#0">
-                      <h3>Real Projects</h3>
-                      <p>Working on university challenges that simulate real-world programming and engineering problems.</p>
-                    </a>
-                  </div>
                 </div>
-              </li>
-
-              <!-- PROJECTS -->
-              <li class="l-section section">
-                <div class="work">
-                  <h2>University Projects</h2>
-                  <div class="work--lockup">
-                    <ul class="slider">
-                      <li class="slider--item slider--item-left">
-                        <a href="#0">
-                          <div class="slider--item-image"><img src="assets/img/matlab.png" alt="Computational Mathematics (MATLAB)" /></div>
-                          <p class="slider--item-title">Computational Mathematics</p>
-                          <p class="slider--item-description">
-                            Implementation of MATLAB algorithms: from theory to code, including numerical validation and data visualization.
-                          </p>
-                        </a>
-                      </li>
-
-                      <li class="slider--item slider--item-center">
-                        <a href="#0">
-                          <div class="slider--item-image"><img src="assets/img/grafos.png" alt="Graph Algorithms (MATLAB)" /></div>
-                          <p class="slider--item-title">Graph Algorithms</p>
-                          <p class="slider--item-description">
-                            Study of shortest paths and algorithmic efficiency (Dijkstra, BFS/DFS), with performance metrics and visualization.
-                          </p>
-                        </a>
-                      </li>
-
-                      <li class="slider--item slider--item-right">
-                        <a href="#0">
-                          <div class="slider--item-image"><img src="assets/img/de-orbiting.png" alt="De-Orbiting Simulation" /></div>
-                          <p class="slider--item-title">De-Orbiting</p>
-                          <p class="slider--item-description">
-                            Numerical modeling of satellite reentry (ODEs, gravity, and drag) with integration and trajectory plotting in MATLAB.
-                          </p>
-                        </a>
-                      </li>
-
-                      <li class="slider--item">
-                        <a href="#0">
-                          <div class="slider--item-image"><img src="assets/img/basededados.png" alt="Databases (SQL Server/Access)" /></div>
-                          <p class="slider--item-title">Databases</p>
-                          <p class="slider--item-description">
-                            Relational modeling, normalization, and SQL queries (joins, grouping, and views).
-                          </p>
-                        </a>
-                      </li>
-
-                      <li class="slider--item">
-                        <a href="#0">
-                          <div class="slider--item-image"><img src="assets/img/java.png" alt="Java Programs (OOP)" /></div>
-                          <p class="slider--item-title">Java Projects</p>
-                          <p class="slider--item-description">
-                            A set of Java (OOP) projects: console apps and small games using classes, inheritance, collections, and testing.
-                          </p>
-                        </a>
-                      </li>
-                    </ul>
-
-                    <div class="slider--prev">‹</div>
-                    <div class="slider--next">›</div>
-                  </div>
-                </div>
-              </li>
-
-              <!-- ABOUT -->
-              <li class="l-section section">
-                <div class="about">
-                  <div class="about--banner">
-                    <h2>
-                      Rafael<br />
-                      Graça<br />
-                      Computer<br />
-                      Engineering
-                    </h2>
-                    <a href="#0">
-                      About Me
-                      <span>→</span>
-                    </a>
-                    <img src="assets/img/foto_cv.png" alt="About me" />
-                  </div>
-
-                  <div class="about--options">
-                    <a href="#0" style="background-image: url('assets/img/foto_cv.png');">
-                      <h3>Who I Am</h3>
-                      <p>
-                        Computer Engineering student at <strong>Polytechnic Institute of Beja</strong> since 2022,
-                        after completing secondary education at <strong>Vila Real de Santo António Secondary School</strong>.
-                        Passionate about technology, programming, and digital solution development.
-                      </p>
-                    </a>
-
-                    <a href="#0" style="background-image: url('assets/img/about-skills.jpg');">
-                      <h3>Hard Skills</h3>
-                      <p>
-                        Programming in <strong>Java</strong>, <strong>MATLAB</strong>, and <strong>SQL</strong>.<br />
-                        Web development with <strong>HTML</strong>, <strong>CSS</strong>, and <strong>JavaScript</strong>.<br />
-                        Experience with <strong>databases</strong> (SQL Server, Access) and <strong>GitHub</strong>.
-                      </p>
-                    </a>
-
-                    <a href="#0" style="background-image: url('assets/img/about-soft.jpg');">
-                      <h3>Soft Skills</h3>
-                      <p>
-                        Clear communication, teamwork, problem-solving focus, and adaptability to new technologies and challenges.
-                      </p>
-                    </a>
-                  </div>
-                </div>
-              </li>
-
-              <!-- CONTACT -->
-              <li class="l-section section">
-                <div class="contact">
-                  <div class="contact--lockup">
-                    <div class="modal">
-                      <div class="modal--information">
-                        <p><strong>City:</strong> Castro Marim, PORTUGAL</p>
-                        <a href="mailto:rafaelribgraca@gmail.com">rafaelribgraca@gmail.com</a>
-                        <a href="tel:+351939298420">+351 939 298 420</a>
-                      </div>
-
-                      <ul class="modal--options">
-                        <li><a href="https://www.linkedin.com/in/rafael-graca-a85521386" target="_blank" rel="noopener" class="contact-btn">LinkedIn</a></li>
-                        <li><a href="https://github.com/rafagraca" target="_blank" rel="noopener" class="contact-btn">GitHub</a></li>
-                        <li><a href="assets/cv/cvotimizado.pdf" target="_blank" rel="noopener" class="contact-btn">View CV</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </li>
-            </ul>
-          </div>
+            </div>
         </div>
-      </div>
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-slate-100">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-brand hover:bg-slate-50 rounded-md">Home</a>
+                <a href="#about" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-brand hover:bg-slate-50 rounded-md">About</a>
+                <a href="#projects" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-brand hover:bg-slate-50 rounded-md">Projects</a>
+                <a href="#interests" class="block px-3 py-2 text-base font-medium text-slate-700 hover:text-brand hover:bg-slate-50 rounded-md">Interests</a>
+                <a href="rafael_graca_cv.pdf" class="block px-3 py-2 text-base font-medium text-brand hover:bg-slate-50 rounded-md font-bold">Download CV</a>
+            </div>
+        </div>
+    </nav>
 
-      <ul class="outer-nav">
-        <li class="is-active">Home</li>
-        <li>Projects</li>
-        <li>About</li>
-        <li>Contact</li>
-      </ul>
-    </div>
+    <!-- HERO SECTION -->
+    <section id="home" class="pt-32 pb-20 md:pt-40 md:pb-32 hero-pattern min-h-screen flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                <div class="order-2 md:order-1 space-y-6">
+                    <div class="inline-block px-4 py-1.5 rounded-full bg-brand/10 text-brand font-semibold text-sm tracking-wide uppercase">
+                        Computer Engineering Student
+                    </div>
+                    <h1 class="text-5xl md:text-7xl font-bold leading-tight text-slate-900">
+                        Engineering <br>
+                        <span class="text-brand">Solutions</span> with Code.
+                    </h1>
+                    <p class="text-lg md:text-xl text-slate-600 max-w-lg leading-relaxed">
+                        I combine strong mathematical foundations with software development skills in Java, SQL, and MATLAB to solve real-world problems.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                        <a href="#projects" class="px-8 py-3.5 rounded-lg bg-slate-900 text-white font-semibold hover:bg-slate-800 transition-all shadow-lg text-center">
+                            View My Projects
+                        </a>
+                    </div>
+                    <div class="pt-8 flex gap-6 text-slate-400">
+                        <a href="https://github.com/rafagraca" target="_blank" class="hover:text-brand transition-colors"><i class="fab fa-github text-3xl"></i></a>
+                        <a href="https://www.linkedin.com/in/rafael-graca-a85521386" target="_blank" class="hover:text-brand transition-colors"><i class="fab fa-linkedin text-3xl"></i></a>
+                        <a href="mailto:rafaelribgraca@gmail.com" class="hover:text-brand transition-colors"><i class="fas fa-envelope text-3xl"></i></a>
+                    </div>
+                </div>
+                <div class="order-1 md:order-2 flex justify-center relative">
+                    <div class="absolute inset-0 bg-brand/20 blur-3xl rounded-full transform translate-y-10 scale-90"></div>
+                    <!-- Placeholder for Profile Image -->
+                    <div class="relative w-64 h-64 md:w-80 md:h-80 rounded-2xl overflow-hidden shadow-2xl border-4 border-white rotate-3 hover:rotate-0 transition-all duration-500">
+                        <img src="assets/img/foto_cv.png" onerror="this.src='https://ui-avatars.com/api/?name=Rafael+Graca&background=800020&color=fff&size=500'" alt="Rafael Graça" class="w-full h-full object-cover">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>');</script>
-    <script src="assets/js/functions-min.js"></script>
-  </body>
+    <!-- ABOUT SECTION -->
+    <section id="about" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand font-semibold tracking-wide uppercase">Profile</h2>
+                <h3 class="mt-2 text-3xl font-bold text-slate-900">About Me</h3>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Card 1: Who I Am -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-user-graduate"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Background</h4>
+                    <p class="text-slate-600 leading-relaxed">
+                        Computer Engineering undergraduate at <strong>Polytechnic Institute of Beja</strong> (since 2022). 
+                        I transitioned from a Science & Technology background into engineering, driven by a passion for logical problem solving.
+                    </p>
+                </div>
+
+                <!-- Card 2: Hard Skills -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-green-100 text-green-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Technical Stack</h4>
+                    <ul class="space-y-2 text-slate-600">
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> Java (OOP, Collections)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> MATLAB (Simulation, Math)</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> SQL Server / Access</li>
+                        <li class="flex items-center gap-2"><i class="fas fa-check text-green-500 text-xs"></i> Web (HTML, CSS, JS)</li>
+                    </ul>
+                </div>
+
+                <!-- Card 3: Soft Skills -->
+                <div class="glass-card p-8 rounded-2xl hover:shadow-xl transition-shadow duration-300">
+                    <div class="w-12 h-12 bg-purple-100 text-purple-600 rounded-lg flex items-center justify-center mb-6 text-xl">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h4 class="text-xl font-bold text-slate-900 mb-3">Soft Skills</h4>
+                    <p class="text-slate-600 mb-4">Developed through Summer Team Leader roles:</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Leadership</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Communication</span>
+                        <span class="px-3 py-1 bg-purple-50 text-purple-700 rounded-full text-sm font-medium">Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-brand font-semibold tracking-wide uppercase">Portfolio</h2>
+                <h3 class="mt-2 text-3xl font-bold text-slate-900">Academic Projects</h3>
+                <p class="text-slate-500 mt-4 max-w-2xl mx-auto">Selected works demonstrating my capabilities in software design, database management, and mathematical modeling.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                
+                <!-- Project 1: EasyMed -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col h-full">
+                    <div class="h-48 bg-blue-50 relative overflow-hidden flex items-center justify-center">
+                         <div class="absolute inset-0 bg-gradient-to-br from-blue-600 to-indigo-900 opacity-90"></div>
+                         <i class="fas fa-mobile-alt text-6xl text-white relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-blue-600 uppercase tracking-wider bg-blue-100 px-2 py-1 rounded">Mobile UX/UI</span>
+                            <span class="text-xs text-slate-400">2025</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">EasyMed App Design</h4>
+                        <p class="text-slate-600 text-sm mb-4 flex-1">
+                            Designed the interface and user experience for a medication management Android application. Created user personas, scenarios, task analysis, and low-fidelity prototypes to ensure accessibility for seniors and professionals.
+                        </p>
+                        <div class="border-t border-slate-200 pt-4 mt-auto">
+                            <!-- Link to the specific EasyMed report file -->
+                            <a href="assets/projects/TG1_02_22584_24105_23913.pdf" target="_blank" class="inline-flex items-center text-sm font-semibold text-brand hover:text-brand-dark">
+                                <i class="fas fa-file-pdf mr-2"></i> View Project Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Database Management -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col h-full">
+                    <div class="h-48 bg-emerald-50 relative overflow-hidden flex items-center justify-center">
+                         <div class="absolute inset-0 bg-gradient-to-br from-emerald-600 to-teal-900 opacity-90"></div>
+                         <i class="fas fa-database text-6xl text-white relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-emerald-600 uppercase tracking-wider bg-emerald-100 px-2 py-1 rounded">SQL Server</span>
+                            <span class="text-xs text-slate-400">2025</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Clothing Alterations DB</h4>
+                        <p class="text-slate-600 text-sm mb-4 flex-1">
+                            Architected a relational database for "Fernandes & Lda". Normalized data to 3NF, implemented tables in SQL Server, and developed a frontend management interface using Microsoft Access with ODBC connection.
+                        </p>
+                        <div class="border-t border-slate-200 pt-4 mt-auto">
+                            <!-- Link to the specific Database report file -->
+                            <a href="assets/projects/Relatorio_BD1_RafaelGraça_23913_RodrigoGaspar_26908.pdf" target="_blank" class="inline-flex items-center text-sm font-semibold text-brand hover:text-brand-dark">
+                                <i class="fas fa-file-pdf mr-2"></i> View Project Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Metro Optimization -->
+                <div class="group bg-slate-50 rounded-2xl overflow-hidden hover:shadow-2xl transition-all duration-300 border border-slate-100 flex flex-col h-full">
+                    <div class="h-48 bg-orange-50 relative overflow-hidden flex items-center justify-center">
+                         <div class="absolute inset-0 bg-gradient-to-br from-orange-500 to-red-900 opacity-90"></div>
+                         <i class="fas fa-project-diagram text-6xl text-white relative z-10 group-hover:scale-110 transition-transform duration-500"></i>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col">
+                        <div class="flex justify-between items-center mb-3">
+                            <span class="text-xs font-bold text-orange-600 uppercase tracking-wider bg-orange-100 px-2 py-1 rounded">MATLAB & Optimization</span>
+                            <span class="text-xs text-slate-400">2024</span>
+                        </div>
+                        <h4 class="text-xl font-bold text-slate-900 mb-2">Lisbon Metro Optimization</h4>
+                        <p class="text-slate-600 text-sm mb-4 flex-1">
+                            Modeled the Lisbon Metro network using graph theory. Implemented an Integer Linear Programming formulation in IBM CPLEX and MATLAB to calculate the shortest path (minimum hops) between stations.
+                        </p>
+                        <div class="border-t border-slate-200 pt-4 mt-auto">
+                            <!-- Link to the specific Math report file (docx) -->
+                            <a href="assets/projects/ParteI-MC-23913.docx" target="_blank" class="inline-flex items-center text-sm font-semibold text-brand hover:text-brand-dark">
+                                <i class="fas fa-file-word mr-2"></i> View Project Report
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INTERESTS & VOLUNTEERING (Required by Enunciado) -->
+    <section id="interests" class="py-20 bg-slate-900 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16">
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fas fa-heart text-brand"></i> Interests & Hobbies
+                    </h3>
+                    <p class="text-slate-400 mb-6">
+                        Beyond the code, I am passionate about activities that challenge my strategic thinking and creativity.
+                    </p>
+                    <div class="space-y-4">
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-white/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-chess-knight text-brand-light"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Strategic Gaming</h4>
+                                <p class="text-sm text-slate-400">Enhancing problem-solving skills under pressure.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-4">
+                            <div class="w-10 h-10 rounded bg-white/10 flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-laptop-code text-brand-light"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-semibold text-lg">Open Source</h4>
+                                <p class="text-sm text-slate-400">Following web dev trends and contributing to community code.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="text-2xl font-bold mb-6 flex items-center gap-3">
+                        <i class="fas fa-hands-helping text-brand"></i> Civic Action
+                    </h3>
+                    <p class="text-slate-400 mb-6">
+                        I believe in giving back to the community and using technology for good.
+                    </p>
+                    <div class="bg-white/5 p-6 rounded-xl border border-white/10">
+                        <h4 class="font-bold text-lg text-white mb-2">Community Volunteering</h4>
+                        <p class="text-slate-400 text-sm mb-4">
+                            Participating in local initiatives to support community events and organization.
+                        </p>
+                        <div class="flex gap-2">
+                            <span class="px-2 py-1 text-xs bg-white/10 rounded text-slate-300">Teamwork</span>
+                            <span class="px-2 py-1 text-xs bg-white/10 rounded text-slate-300">Social Impact</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-slate-950 py-12 border-t border-slate-900">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="text-center md:text-left">
+                <span class="font-bold text-2xl text-white tracking-tighter">RG.</span>
+                <p class="text-slate-500 text-sm mt-1">© 2025 Rafael Graça. All rights reserved.</p>
+            </div>
+            
+            <div class="flex gap-6">
+                <a href="https://github.com/rafagraca" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-brand hover:text-white transition-all">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/rafael-graca-a85521386" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-brand hover:text-white transition-all">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="mailto:rafaelribgraca@gmail.com" class="w-10 h-10 rounded-full bg-slate-900 flex items-center justify-center text-slate-400 hover:bg-brand hover:text-white transition-all">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple Smooth Scroll for Navigation
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>

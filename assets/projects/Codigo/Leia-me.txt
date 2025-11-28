@@ -1,0 +1,18 @@
+O ficheiro de dados para uma instancia do problema da caminho mais curto, com n vertices e dois tipos de custos, deve ser dado no formato matriz e preenchido como se segue:
+
+c11 c12 c13...... c1n
+c21 c22 c23...... c2n
+.
+.
+.
+.
+.
+cn1 cm2 cm3..... cnn
+c'11 c'12 c'13...... c'1n
+c'21 c'22 c'23...... c'2n
+.
+.
+.
+.
+.
+c'n1 c'n2 c'n3..... c'nn
